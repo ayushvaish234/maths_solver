@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AP">
+
+    <ImageButton
+        android:id="@+id/back4"
+        android:layout_width="29dp"
+        android:layout_height="35dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        app:srcCompat="@drawable/back"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/a1"
+        android:layout_width="92dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="279dp"
+        android:layout_marginBottom="582dp"
+        android:gravity="center"
+        android:text="a"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/a2"
+        android:layout_width="92dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="279dp"
+        android:layout_marginBottom="447dp"
+        android:gravity="center"
+        android:text="n"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/a3"
+        android:layout_width="92dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="279dp"
+        android:layout_marginBottom="515dp"
+        android:gravity="center"
+        android:text="d"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/d"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="515dp"
+        android:ems="10"
+        android:gravity="right"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/a"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="582dp"
+        android:ems="10"
+        android:gravity="right"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <EditText
+        android:id="@+id/n"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="447dp"
+        android:ems="10"
+        android:gravity="right"
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="206dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginBottom="334dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/tn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nth Term" />
+
+        <RadioButton
+            android:id="@+id/sn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sum of n terms" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/gen"
+        android:layout_width="94dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginEnd="275dp"
+        android:layout_marginBottom="262dp"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="222dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="262dp"
+        android:gravity="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gen"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="98dp"
+        android:layout_height="26dp"
+        android:gravity="center"
+        android:text="AP"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/back4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

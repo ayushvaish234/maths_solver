@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".power">
+
+        <ImageButton
+            android:id="@+id/back3"
+            android:layout_width="29dp"
+            android:layout_height="35dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.013"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022"
+            app:srcCompat="@drawable/back"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/a"
+            android:layout_width="78dp"
+            android:layout_height="81dp"
+
+            android:ems="10"
+            android:fontFamily="@font/cantora_one"
+            android:gravity="right"
+            android:hint="a"
+            android:inputType="numberDecimal|numberSigned"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.417"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <EditText
+            android:id="@+id/c"
+            android:layout_width="78dp"
+            android:layout_height="81dp"
+
+            android:ems="10"
+            android:fontFamily="@font/cantora_one"
+            android:hint="x"
+            android:inputType="numberDecimal|numberSigned"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.672"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.183" />
+
+        <Button
+            android:id="@+id/generate"
+            android:layout_width="93dp"
+            android:layout_height="57dp"
+            android:backgroundTint="#3A98B9"
+            android:text="="
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.584" />
+
+        <TextView
+            android:id="@+id/res"
+            android:layout_width="301dp"
+            android:layout_height="67dp"
+
+            android:layout_marginBottom="48dp"
+            android:fontFamily="@font/cantora_one"
+            android:gravity="center"
+            android:textColor="@color/pink"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/generate"
+            app:layout_constraintEnd_toEndOf="@+id/c"
+            app:layout_constraintHorizontal_bias="0.536"
+            app:layout_constraintStart_toStartOf="@+id/a"
+            app:layout_constraintTop_toBottomOf="@+id/a"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

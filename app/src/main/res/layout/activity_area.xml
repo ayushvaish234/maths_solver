@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".area">
+
+        <ImageButton
+            android:id="@+id/back3"
+            android:layout_width="29dp"
+            android:layout_height="35dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.013"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022"
+            app:srcCompat="@drawable/back"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/Area"
+            android:layout_width="323dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="84dp"
+            android:backgroundTint="#3949AB"
+            android:text="Cuboid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/vol"
+            android:layout_width="323dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#3949AB"
+            android:text="Cube"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Area" />
+
+        <Button
+            android:id="@+id/cyli"
+            android:layout_width="323dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#3949AB"
+            android:text="Cylinder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Area" />
+
+        <Button
+            android:id="@+id/cone"
+            android:layout_width="323dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#3949AB"
+            android:text="Cone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cyli" />
+
+        <Button
+            android:id="@+id/sphere"
+            android:layout_width="323dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="247dp"
+            android:backgroundTint="#3949AB"
+            android:text="Sphere"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cone" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

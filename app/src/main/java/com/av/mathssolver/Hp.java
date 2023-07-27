@@ -1,0 +1,108 @@
+package com.av.mathssolver;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+
+public class Hp extends AppCompatActivity {
+
+    ImageButton b;
+    Button gen;
+    RadioGroup radioGroup;
+    EditText a,d1,n1;
+    TextView res;
+    int check = 0;
+    @SuppressLint("MissingInflatedId")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
+        getSupportActionBar().hide();
+        setContentView(R.layout.activity_hp);
+        radioGroup = findViewById(R.id.radioGroup);
+        b = (ImageButton) findViewById(R.id.back4);
+        gen = (Button) findViewById(R.id.gen);
+        a = findViewById(R.id.a);
+        d1 = findViewById(R.id.d);
+        n1 = findViewById(R.id.n);
+        res = findViewById(R.id.res);
+
+
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(Hp.this, apGpHp.class);
+                startActivity(intent);
+            }
+        });
+
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                RadioButton radioButton = findViewById(checkedId);
+                if(radioButton.getId() == R.id.tn)
+                {
+                    check = 1;
+                }
+                else if(radioButton.getId() == R.id.sn)
+                {
+                    check = 2;
+                }
+            }
+        });
+
+        gen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (a.getText().toString().equals("")  ){
+                    res.setText("Enter all values");
+                }
+                else if( n1.getText().toString().equals("") )
+                {
+                    res.setText("Enter all values");
+                }else if(d1.getText().toString().equals("")) {
+                    res.setText("Enter all values");
+                }
+                else {
+
+                    double a1 = Double.valueOf(Double.parseDouble((a.getText().toString())));
+                    double n = Double.valueOf(Double.parseDouble((n1.getText().toString())));
+                    double a2 = Double.valueOf(Double.parseDouble((d1.getText().toString())));
+
+                    a1 = 1/a1;
+                    a2= 1/a2;
+                    double d = a2 - a1;
+                    if(check ==1)
+                    {
+                        double tn =a1 + (n-1)*d;
+                        res.setText("t"+(int)n+": "+String.format("%.2f",1/tn));
+                    }
+                    else if(check ==2)
+                    {
+                        double s =(2*a1) + (n-1)*d;
+                        double sn = (n/2)*(s);
+                        res.setText("s"+(int)n+": "+String.format("%.2f",1/sn));
+                    }
+                    else{
+                        res.setText("please select button");
+                    }
+
+                }}
+        });
+
+
+    }
+}
